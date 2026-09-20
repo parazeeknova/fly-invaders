@@ -1,0 +1,21 @@
+[project]
+name = "flybrain"
+version = "0.1.0"
+description = "Fly Invaders: reconstructed MaleCNS fruit-fly brain (from DOOMFLY) driving Space Invaders over a WebSocket."
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "scipy",
+    "numba",
+    "pillow",
+    "websockets>=13",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["flybrain"]
