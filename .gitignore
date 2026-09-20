@@ -1,0 +1,23 @@
+
+# Secrets / local config
+.env*
+!.env.example
+
+# Python (brain/)
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+brain/connectome_data/
+brain/outputs/
+*.so
+*.dylib
+*.o
+*.log
+
+# Node (web/)
+node_modules/
+web/dist/
+*.tsbuildinfo
+.DS_Store
